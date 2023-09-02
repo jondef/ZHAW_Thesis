@@ -1,0 +1,28 @@
+
+
+
+
+EXPERIMENT -> Document everything, what are your expecations? What is the reality?
+Did it work?
+
+
+
+Aug 2023:
+Tastyworks released a public API. I can now use the API to automate my option trades.
+First, write a python SDK to interact with the API.
+
+discrete vs continous action space
+td3 is self driving car
+emsembles: train an ensemble of the agorthms -> outperform the best algorithm
+overfitting
+
+# The algorithms require a vectorized environment to run
+env = DummyVecEnv ( [lambda: StockTradingEnv (df) ])
+model = PP("MIpPolicy", env, verbose=1, tensorboard_ log="./tensorboard/")
+model.learn (total timesteps=50000)
+obs = env.reset ( )
+results = [1]
+
+§load ext tensorboard
+
+§tensorboard --logdir tensorboard/
